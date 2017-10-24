@@ -1,0 +1,14 @@
+//
+//  WeeklyCalendarView.h
+//  isInvested
+//
+//  Created by Blue on 16/9/27.
+//  Copyright © 2016年 Blue. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface WeeklyCalendarView : UIView
+
+@property (nonatomic, copy) void(^clickedDayBlock)(NSString *);
+@end

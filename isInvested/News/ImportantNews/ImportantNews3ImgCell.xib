@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImportantNews3ImgCell" rowHeight="203" id="KGk-i7-Jjw" customClass="ImportantNews3ImgCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="142"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公布的调查结果显示，英国金融业信心创下金融危机以来的最低点" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvA-t1-Mse">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="un4-lP-h4d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RHU-GX-PGF" userLabel="Image View1">
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NLm-X6-L8s" userLabel="Image View2">
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IVE-g5-F2v" userLabel="Image View3">
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUm-0e-jgF">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="iaw-6s-fb6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WUm-0e-jgF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0xu-sp-qfv"/>
+                    <constraint firstItem="NLm-X6-L8s" firstAttribute="height" secondItem="RHU-GX-PGF" secondAttribute="width" multiplier="0.7" id="113-0l-pbi"/>
+                    <constraint firstItem="NLm-X6-L8s" firstAttribute="width" secondItem="RHU-GX-PGF" secondAttribute="width" id="3WW-lh-s1I"/>
+                    <constraint firstItem="IVE-g5-F2v" firstAttribute="leading" secondItem="NLm-X6-L8s" secondAttribute="trailing" constant="10" id="9Ga-Iv-bPF"/>
+                    <constraint firstItem="IVE-g5-F2v" firstAttribute="height" secondItem="RHU-GX-PGF" secondAttribute="height" id="HLj-RU-cNY"/>
+                    <constraint firstItem="RHU-GX-PGF" firstAttribute="top" secondItem="xvA-t1-Mse" secondAttribute="bottom" constant="10" id="Wg9-My-Ztf"/>
+                    <constraint firstItem="xvA-t1-Mse" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="b4y-Va-Tno"/>
+                    <constraint firstItem="IVE-g5-F2v" firstAttribute="top" secondItem="xvA-t1-Mse" secondAttribute="bottom" constant="10" id="cy2-sU-X8p"/>
+                    <constraint firstItem="RHU-GX-PGF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="dcU-9o-2tQ"/>
+                    <constraint firstItem="WUm-0e-jgF" firstAttribute="top" secondItem="NLm-X6-L8s" secondAttribute="bottom" constant="10" id="hIv-cg-3bx"/>
+                    <constraint firstAttribute="trailing" secondItem="xvA-t1-Mse" secondAttribute="trailing" constant="15" id="iaT-nH-OOM"/>
+                    <constraint firstItem="IVE-g5-F2v" firstAttribute="width" secondItem="RHU-GX-PGF" secondAttribute="width" id="lRJ-Me-CDC"/>
+                    <constraint firstItem="NLm-X6-L8s" firstAttribute="top" secondItem="xvA-t1-Mse" secondAttribute="bottom" constant="10" id="lcb-O0-u6z"/>
+                    <constraint firstItem="IVE-g5-F2v" firstAttribute="leading" secondItem="NLm-X6-L8s" secondAttribute="trailing" constant="10" id="lru-XW-npk"/>
+                    <constraint firstItem="NLm-X6-L8s" firstAttribute="leading" secondItem="RHU-GX-PGF" secondAttribute="trailing" constant="10" id="nD1-6D-9T8"/>
+                    <constraint firstItem="xvA-t1-Mse" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="rsy-V7-PRX"/>
+                    <constraint firstItem="NLm-X6-L8s" firstAttribute="height" secondItem="RHU-GX-PGF" secondAttribute="height" id="xez-p7-yue"/>
+                    <constraint firstAttribute="trailing" secondItem="WUm-0e-jgF" secondAttribute="trailing" constant="15" id="yPW-yA-K23"/>
+                    <constraint firstAttribute="trailing" secondItem="IVE-g5-F2v" secondAttribute="trailing" constant="15" id="zdt-hd-aKk"/>
+                    <constraint firstItem="NLm-X6-L8s" firstAttribute="leading" secondItem="RHU-GX-PGF" secondAttribute="trailing" constant="10" id="zlh-jw-aMb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image1L" destination="RHU-GX-PGF" id="HgF-Uo-ICl"/>
+                <outlet property="image2L" destination="NLm-X6-L8s" id="6n4-mo-3R9"/>
+                <outlet property="image3L" destination="IVE-g5-F2v" id="nth-Ty-NGd"/>
+                <outlet property="mediaL" destination="WUm-0e-jgF" id="yW3-dd-Qdh"/>
+                <outlet property="titleL" destination="xvA-t1-Mse" id="jFx-56-J8A"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="-80"/>
+        </tableViewCell>
+    </objects>
+</document>

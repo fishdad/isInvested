@@ -1,0 +1,104 @@
+//
+//  isInvested.pch
+//  isInvested
+//
+//  Created by Wu on 16/8/4.
+//  Copyright © 2016年 Blue. All rights reserved.
+//
+
+#ifndef isInvested_pch
+#define isInvested_pch
+
+#ifdef __OBJC__ // 开始
+
+#import "UIView+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "CALayer+Extension.h"
+#import "NSString+Extension.h"
+#import "NSArray+Extension.h"
+#import "NSDate+Extension.h"
+#import "NSData+Extension.h"
+#import "NSObject+Extension.h"
+#import "NSUserDefaults+Extension.h"
+
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import "Util.h"
+#import "HWWeakTimer.h" //runloop弱引用计时器
+#import "DealSocketTool.h"
+
+#import "Const.h"
+#import "SocketStruct.h"
+#import "HUDTool.h"
+#import "HttpTool.h"
+#import "GGHttpTool.h"
+#import "DrawTool.h"
+#import "TxtTool.h"
+#import "IndexTool.h"
+#import "CalculatorTool.h"
+#import "CacheTool.h"
+
+#ifdef  DEBUG
+#define LOG(...)  NSLog(__VA_ARGS__)
+#define LOG_FUNC  NSLog(@"%s", __func__);
+#define LOG_ERROR NSLog(@"%s\n%@", __func__, error);
+#else
+#define LOG(...)
+#define LOG_FUNC
+#define LOG_ERROR
+#endif
+
+#define WIDTH             [UIScreen mainScreen].bounds.size.width
+#define HEIGHT            [UIScreen mainScreen].bounds.size.height
+#define KEY_WINDOW        [UIApplication sharedApplication].keyWindow
+#define IOS_VERSION       [[UIDevice currentDevice]systemVersion].floatValue
+#define kInterval1970     [[NSDate date] timeIntervalSince1970]
+//#define MAIN_QUEUE(block) [[NSOperationQueue mainQueue] addOperationWithBlock:block];
+#define WEAK_SELF         __weak typeof(self) weakSelf = self;
+#define PRIORITY(a, b)    (a ? a : b)
+
+#define HEIGHT_21_9 (WIDTH / 21 * 9)
+
+
+// 字体
+#define FONT(s)              [UIFont systemFontOfSize:s]
+#define BOLD_FONT(s)         [UIFont boldSystemFontOfSize:s]
+
+// 颜色
+#define RGBAColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define RGBColor(r, g, b)     RGBAColor((r), (g), (b), 1.0)
+#define OXAColor(rgb, a)      RGBAColor(((float)((rgb & 0xFF0000) >> 16)), ((float)((rgb & 0xFF00) >> 8)), ((float)(rgb & 0xFF)), a)
+#define OXColor(rgb)          OXAColor(rgb, 1.0)
+
+#define NewsSelectColor     OXColor(0x777777) //快讯选中后的颜色
+#define GrayBorderColor     OXColor(0x999999) //灰色边框颜色
+#define GrayBgColor         OXColor(0xf5f5f5) //灰色背景色
+#define GRAY_TITLE_COLOR    OXColor(0x666666) //K线页小图区,灰色文字颜色
+#define RED_LINE_COLOR      OXColor(0xf25c73)
+#define YELLOW_LINE_COLOR   OXColor(0xfdc353)
+#define BLUE_LINE_COLOR     OXColor(0x88a6db)
+#define kNavigationBarColor OXColor(0x1996d5)
+
+#define kCalendarSignNowColor   0x3dafeb //侦测中颜色
+#define kCalendarSignPastColor  0x8b8b8b //已公布颜色
+
+// 开发用, 上线时删除---------------------------------------------
+//#define RandomColor     RGBColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+//#define SandboxPath     [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
+
+// 以下ben---------------------------------------------------------------------------------------------------------
+
+#define height(a)                   (a).frame.size.height
+#define NH(a)                       ((a).frame.size.height + (a).frame.origin.y)
+#define NW(a)                       ((a).frame.size.width + (a).frame.origin.x)
+
+#define LightGrayBackColor  OXColor(0xe6e6e6)
+#define GreenBackColor      OXColor(0x11c971)
+#define RedBackColor        OXColor(0xf55150)
+#define OrangeBackColor     OXColor(0xec6a00)
+
+#endif // 结束
+#endif /* isInvested_pch */

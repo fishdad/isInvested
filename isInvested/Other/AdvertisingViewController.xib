@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdvertisingViewController">
+            <connections>
+                <outlet property="imageIv" destination="wHt-Kn-hRG" id="5e6-3t-tRt"/>
+                <outlet property="skipBtn" destination="VQ3-of-4Ik" id="JVW-YP-gBf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="wHt-Kn-hRG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQ3-of-4Ik">
+                    <rect key="frame" x="290" y="25" width="70" height="25"/>
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Kmp-Bn-Uej"/>
+                        <constraint firstAttribute="width" constant="70" id="tPH-sV-ESt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="跳过广告"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="12.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickedSkip" destination="-1" eventType="touchUpInside" id="Fla-Qh-6ar"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VQ3-of-4Ik" secondAttribute="trailing" constant="15" id="NTz-9q-1Sj"/>
+                <constraint firstAttribute="trailing" secondItem="wHt-Kn-hRG" secondAttribute="trailing" id="OI6-Oy-LSo"/>
+                <constraint firstItem="wHt-Kn-hRG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XvD-8f-sKB"/>
+                <constraint firstAttribute="bottom" secondItem="wHt-Kn-hRG" secondAttribute="bottom" id="arI-vc-GHl"/>
+                <constraint firstItem="VQ3-of-4Ik" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="c20-mK-BbB"/>
+                <constraint firstItem="wHt-Kn-hRG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qkJ-0K-6ro"/>
+            </constraints>
+            <point key="canvasLocation" x="-894" y="143"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="launch.png" width="375" height="667"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SearchCell" id="KGk-i7-Jjw" customClass="SearchCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYf-Fo-K7v">
+                        <rect key="frame" x="10" y="15" width="14" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="VcB-XU-rsD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ye5-R0-K7t">
+                        <rect key="frame" x="321" y="0.0" width="44" height="54.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="cWO-ho-0Tz"/>
+                        </constraints>
+                        <state key="normal" image="select_no.png"/>
+                        <state key="selected" image="select_yes.png"/>
+                        <connections>
+                            <action selector="clickedAdd:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mqT-8q-9M4"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTk-h7-qxd">
+                        <rect key="frame" x="10" y="36" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="aNZ-3Z-goa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ye5-R0-K7t" secondAttribute="trailing" constant="10" id="6aC-gn-5lg"/>
+                    <constraint firstItem="lYf-Fo-K7v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="C3q-0i-S98"/>
+                    <constraint firstItem="VTk-h7-qxd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="KvF-Lt-ly6"/>
+                    <constraint firstItem="lYf-Fo-K7v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="LSe-0Y-KVs"/>
+                    <constraint firstItem="Ye5-R0-K7t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SxM-A2-ORR"/>
+                    <constraint firstItem="VTk-h7-qxd" firstAttribute="top" secondItem="lYf-Fo-K7v" secondAttribute="bottom" constant="6" id="bgo-Xp-R12"/>
+                    <constraint firstAttribute="bottom" secondItem="Ye5-R0-K7t" secondAttribute="bottom" id="qp5-vA-90M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="codeL" destination="VTk-h7-qxd" id="dT0-bM-W4m"/>
+                <outlet property="nameL" destination="lYf-Fo-K7v" id="CAF-fZ-mEw"/>
+                <outlet property="selectB" destination="Ye5-R0-K7t" id="65G-3r-QRr"/>
+            </connections>
+            <point key="canvasLocation" x="-273" y="-180"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="select_no.png" width="20" height="20"/>
+        <image name="select_yes.png" width="20" height="20"/>
+    </resources>
+</document>

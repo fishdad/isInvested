@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="suspensionBarButton" destination="Od4-JH-Y2P" id="If9-aU-Vs3"/>
+                <outlet property="suspensionBarView" destination="q4o-GG-gK2" id="4dc-O4-MfZ"/>
+                <outlet property="tableView" destination="uU4-at-sNz" id="Uvo-L8-GmQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uU4-at-sNz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2Ys-3h-iJO"/>
+                        <outlet property="delegate" destination="-1" id="2LC-hd-BpB"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4o-GG-gK2" userLabel="bottomView">
+                    <rect key="frame" x="0.0" y="578" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="千万投资者的掌中宝" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eg-Kd-DLV">
+                            <rect key="frame" x="20" y="0.0" width="129" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Od4-JH-Y2P">
+                            <rect key="frame" x="280" y="8" width="85" height="24"/>
+                            <color key="backgroundColor" red="0.92549019610000005" green="0.41568627450000001" blue="0.0" alpha="0.90414450349999997" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="H6f-be-Mfu"/>
+                                <constraint firstAttribute="height" constant="24" id="bXW-6h-B5L"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickedSuspensionBarButton" destination="-1" eventType="touchUpInside" id="Ksm-s2-Mwh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="6eg-Kd-DLV" secondAttribute="bottom" id="4lK-fo-e91"/>
+                        <constraint firstAttribute="trailing" secondItem="Od4-JH-Y2P" secondAttribute="trailing" constant="10" id="VAG-zO-lHv"/>
+                        <constraint firstItem="Od4-JH-Y2P" firstAttribute="centerY" secondItem="q4o-GG-gK2" secondAttribute="centerY" id="aLw-mW-5vX"/>
+                        <constraint firstAttribute="height" constant="40" id="fVf-pf-2vR"/>
+                        <constraint firstItem="6eg-Kd-DLV" firstAttribute="leading" secondItem="q4o-GG-gK2" secondAttribute="leading" constant="20" id="lQk-18-2pS"/>
+                        <constraint firstItem="6eg-Kd-DLV" firstAttribute="top" secondItem="q4o-GG-gK2" secondAttribute="top" id="xAL-XX-aWA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="q4o-GG-gK2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0hP-Od-2p1"/>
+                <constraint firstItem="uU4-at-sNz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9Aa-dU-76x"/>
+                <constraint firstAttribute="bottom" secondItem="uU4-at-sNz" secondAttribute="bottom" constant="49" id="GOh-KU-wrF"/>
+                <constraint firstItem="uU4-at-sNz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Lay-5Z-PAO"/>
+                <constraint firstAttribute="trailing" secondItem="q4o-GG-gK2" secondAttribute="trailing" id="W3y-L6-jsW"/>
+                <constraint firstAttribute="bottom" secondItem="q4o-GG-gK2" secondAttribute="bottom" constant="49" id="poG-qf-TNB"/>
+                <constraint firstAttribute="trailing" secondItem="uU4-at-sNz" secondAttribute="trailing" id="rWv-X8-Pr8"/>
+            </constraints>
+            <point key="canvasLocation" x="-3660" y="-888"/>
+        </view>
+    </objects>
+</document>

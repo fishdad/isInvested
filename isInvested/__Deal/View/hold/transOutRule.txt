@@ -1,0 +1,11 @@
+<td height="84" align="left" valign="top" class="t2">
+<pre style="word-wrap: break-word; white-space: pre-wrap; white-space: -moz-pre-wrap">
+<h3 align="center">广贵中心出金规则</h3>1、当日入金，需要T+1日才能出金。
+2、在交易日规定时间内才能进行出金操作。
+3、出金公式
+（1）今日可出=客户净值-客户履约准备金-客户冻结准备金
+（2）当前可出=Min（上日余额，今日可出-今日已入）即当前可出金额上限为前一交易日结算后的余额与“今日可出-今日已入”两者的最小值。</pre>
+</td>
+
+
+
